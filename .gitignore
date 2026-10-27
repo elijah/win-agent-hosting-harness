@@ -108,3 +108,6 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Hermes agent config (synced to ~/.hermes by hermes-persona)
+.hermes/
