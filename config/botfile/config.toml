@@ -1,0 +1,65 @@
+[[sources]]
+name = "personal"
+location = "~/win-agent-hosting-harness/config/botfile/personal"
+
+[[sources]]
+name = "team"
+location = "~/win-agent-hosting-harness/config/botfile/team"
+
+# Hermes Science Agent - open science researcher
+[[selections]]
+source = "personal"
+plugin = "hermes-science"
+component = "skills/open-science-researcher.md"
+agents = ["hermes-science"]
+
+[[selections]]
+source = "personal"
+plugin = "hermes-science"
+component = "instructions/open-science-researcher.md"
+agents = ["hermes-science"]
+
+# Hermes Chemistry Agent - chemistry hobbyist
+[[selections]]
+source = "personal"
+plugin = "hermes-chemistry"
+component = "skills/chemistry-hobbyist.md"
+agents = ["hermes-chemistry"]
+
+[[selections]]
+source = "personal"
+plugin = "hermes-chemistry"
+component = "instructions/chemistry-hobbyist.md"
+agents = ["hermes-chemistry"]
+
+# Hermes Biology Agent - biology researcher
+[[selections]]
+source = "personal"
+plugin = "hermes-biology"
+component = "skills/biology-researcher.md"
+agents = ["hermes-biology"]
+
+[[selections]]
+source = "personal"
+plugin = "hermes-biology"
+component = "instructions/biology-researcher.md"
+agents = ["hermes-biology"]
+
+# Team Standards - shared across all agents
+[[selections]]
+source = "team"
+plugin = "standards"
+component = "instructions/interaction-guidelines.md"
+agents = ["hermes-science", "hermes-chemistry", "hermes-biology"]
+
+[[selections]]
+source = "team"
+plugin = "standards"
+component = "instructions/safety-protocols.md"
+agents = ["hermes-science", "hermes-chemistry", "hermes-biology"]
+
+[[selections]]
+source = "team"
+plugin = "standards"
+component = "instructions/documentation-standards.md"
+agents = ["hermes-science", "hermes-chemistry", "hermes-biology"]
